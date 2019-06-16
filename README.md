@@ -24,7 +24,18 @@
       </executions>
   </plugin>  
   ```
-  
+  - You can set the webdriver properties in the `serenity.properties` file as shown below
+  ```
+  webdriver.driver=chrome
+  webdriver.chrome.driver=C:\\drivers\\chromedriver.exe
+  chrome.capabilities.acceptSslCerts=true
+  chrome.capabilities.handlesAlerts=true
+  chrome.capabilities.acceptInsecureCerts=true
+  chrome.switches=--headless
+  ```
   - use `mvn clean verify` to execute your tests
   - You can see the report in below path 
     > target/site/serenity/index.html
+    
+ \#BDD \#Serenity \#Cucumber \#SerenityCucumber \#SeleniumWithSerenity
+ \#SerenityBDD \#SerenityChromeOptions
