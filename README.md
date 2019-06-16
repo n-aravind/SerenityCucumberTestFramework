@@ -27,13 +27,15 @@
   - You can set the webdriver properties in the `serenity.properties` file as shown below
   ```
   webdriver.driver=chrome
-  webdriver.chrome.driver=C:\\drivers\\chromedriver.exe
+  webdriver.chrome.driver=<path to chromedriver executable>
   chrome.capabilities.acceptSslCerts=true
   chrome.capabilities.handlesAlerts=true
   chrome.capabilities.acceptInsecureCerts=true
   chrome.switches=--headless
   ```
   - use `mvn clean verify` to execute your tests
+  - You can avoid hardcoding the chromedriver executable in the codebase by passing it at run time as shown below
+    > mvn verify -Dwebdriver.chrome.driver=/path/to/driver
   - You can see the report in below path 
     > target/site/serenity/index.html
     
